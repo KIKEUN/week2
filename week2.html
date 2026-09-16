@@ -216,10 +216,10 @@ h2 span{color:var(--orange)}
 
 /* ═══════════════════════════ 네 가지 조건 (통합 장) ═══════════════════════════ */
 /* 네 칸 = 선택 칩 = 지도 — 아래 패널과 떨어뜨려 '헤더'가 아니라 '고르는 것'으로 읽히게 */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(7px,.8vw,11px);
-  margin:clamp(16px,2.4vh,26px) 0 clamp(20px,2.8vh,30px)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(6px,.7vw,9px);
+  margin:clamp(12px,1.8vh,18px) 0 clamp(15px,2.1vh,22px)}
 .steps button{position:relative;border:1px solid var(--line);background:#fff;cursor:pointer;
-  padding:clamp(12px,1.8vh,17px) var(--pad);text-align:left;transition:.28s var(--ease-out)}
+  padding:clamp(9px,1.3vh,13px) var(--pad);text-align:left;transition:.28s var(--ease-out)}
 .steps button:hover{border-color:#b7b0a8;transform:translateY(-2px)}
 .steps button[aria-selected="true"]{border-color:var(--orange);background:var(--tint)}
 /* 선택한 칩 아래에 삼각형 — 이 칩이 아래 내용을 가리킨다 */
@@ -228,10 +228,10 @@ h2 span{color:var(--orange)}
   border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid var(--orange)}
 .steps .sn{display:block;font-size:11px;letter-spacing:.13em;color:#a9a29b;font-weight:600}
 .steps button[aria-selected="true"] .sn{color:var(--orange)}
-.steps .st2{display:block;font-size:clamp(15px,1.35vw,21px);font-weight:600;letter-spacing:-.05em;
-  margin-top:6px;color:#8f8880;line-height:1.2}
+.steps .st2{display:block;font-size:clamp(14px,1.2vw,18px);font-weight:600;letter-spacing:-.05em;
+  margin-top:4px;color:#8f8880;line-height:1.15}
 .steps button[aria-selected="true"] .st2{color:var(--ink)}
-.steps .sv{display:block;margin-top:9px;padding-top:9px;border-top:1px solid var(--line);
+.steps .sv{display:block;margin-top:6px;padding-top:6px;border-top:1px solid var(--line);
   font-size:11.5px;letter-spacing:.03em;font-weight:600;color:#c2bcb4}
 .steps button.a-y{border-color:var(--orange)}
 .steps button.a-y .sv{color:var(--orange)}
@@ -248,39 +248,39 @@ h2 span{color:var(--orange)}
   background:var(--bg);border-right:1px solid var(--line);pointer-events:none}
 .askcard.swap{opacity:0;transform:translateY(8px)}
 .askcard>*{position:relative;margin:0;min-width:0;padding-left:var(--pad);padding-right:var(--pad)}
-.askcard>.r1{padding-top:clamp(20px,2.8vh,30px)}
-.askcard>.r3{padding-bottom:clamp(20px,2.8vh,30px)}
+.askcard>.r1{padding-top:clamp(13px,1.9vh,19px)}
+.askcard>.r3{padding-bottom:clamp(13px,1.9vh,19px)}
 .askcard .lbl{font-size:11px;letter-spacing:.13em;color:var(--orange);font-weight:600}
 /* 두 제목은 같은 크기 — 행 높이가 한쪽 때문에 밀리지 않게 */
-.askcard .cond,.askcard .ask{font-size:clamp(16px,1.45vw,23px);font-weight:600;
-  letter-spacing:-.05em;line-height:1.4;margin-top:10px}
-.aires,.rbody{margin-top:clamp(14px,2vh,20px);padding-top:clamp(13px,1.9vh,18px);
+.askcard .cond,.askcard .ask{font-size:clamp(15px,1.28vw,20px);font-weight:600;
+  letter-spacing:-.05em;line-height:1.35;margin-top:8px}
+.aires,.rbody{margin-top:clamp(10px,1.5vh,14px);padding-top:clamp(9px,1.4vh,13px);
   border-top:1px solid var(--line)}
 .aires .ail{display:block;font-size:11px;letter-spacing:.11em;color:#a9a29b;font-weight:600}
-.aires .say{font-size:clamp(13px,1.02vw,15.5px);line-height:1.58;margin-top:9px;letter-spacing:-.03em;color:var(--ink)}
+.aires .say{font-size:clamp(12.5px,.97vw,14.5px);line-height:1.48;margin-top:7px;letter-spacing:-.03em;color:var(--ink)}
 .aires .say b{font-weight:600;color:var(--orange)}
-.aires .say ul{margin:7px 0;display:grid;gap:2px}
-.aires .say li{position:relative;padding-left:12px;color:var(--muted);font-size:.94em;line-height:1.45}
+.aires .say ul{margin:5px 0;display:grid;gap:1px}
+.aires .say li{position:relative;padding-left:11px;color:var(--muted);font-size:.94em;line-height:1.38}
 .aires .say li::before{content:"";position:absolute;left:1px;top:.6em;width:4px;height:4px;background:#b7b0a8}
 .aires .say li b{color:var(--ink)}
-.sim{display:inline-block;margin-top:13px;font-size:11px;letter-spacing:.11em;font-weight:600;
+.sim{display:inline-block;margin-top:9px;font-size:11px;letter-spacing:.11em;font-weight:600;
   color:#b82c00;background:var(--tint);padding:5px 10px}
-.subq{display:grid;gap:8px}
-.subq li{position:relative;padding-left:17px;font-size:clamp(13.5px,1.04vw,16px);color:var(--muted);line-height:1.58}
+.subq{display:grid;gap:6px}
+.subq li{position:relative;padding-left:15px;font-size:clamp(12.5px,.98vw,14.5px);color:var(--muted);line-height:1.48}
 .subq li::before{content:"";position:absolute;left:0;top:.66em;width:5px;height:5px;background:var(--orange);opacity:.55}
 /* 답하면 이 자리에 '어떻게 준비할지'가 들어온다 */
 .prep{animation:ncIn .22s var(--ease-out)}
 .prep .pk{display:block;font-size:11px;letter-spacing:.12em;color:var(--orange);font-weight:600}
-.prep .plead{font-size:clamp(13.5px,1.04vw,16px);color:var(--ink);font-weight:600;
-  letter-spacing:-.035em;margin-top:8px}
-.prep ul{margin-top:10px;display:grid;gap:7px}
-.prep li{position:relative;padding-left:16px;font-size:clamp(13px,1vw,15.5px);
-  color:var(--muted);line-height:1.55}
+.prep .plead{font-size:clamp(12.5px,.98vw,14.5px);color:var(--ink);font-weight:600;
+  letter-spacing:-.035em;margin-top:6px}
+.prep ul{margin-top:7px;display:grid;gap:5px}
+.prep li{position:relative;padding-left:14px;font-size:clamp(12px,.94vw,14px);
+  color:var(--muted);line-height:1.45}
 .prep li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;background:var(--orange);opacity:.55}
 
 /* 답변 버튼 + 깜빡이는 안내 */
-.answer{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:clamp(14px,2vh,20px)}
-.answer button{border:1px solid var(--line);background:#fff;padding:10px 16px;
+.answer{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:clamp(10px,1.5vh,15px)}
+.answer button{border:1px solid var(--line);background:#fff;padding:8px 13px;
   font-size:13.5px;font-weight:600;letter-spacing:-.025em;cursor:pointer;
   white-space:nowrap;transition:.25s}
 .answer button:hover{border-color:var(--ink)}
